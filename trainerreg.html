@@ -1,0 +1,163 @@
+<!DOCTYPE html>
+<html >
+<head>
+
+<title>Trainer Registration</title>
+
+<style>
+    body {
+        font-family: Arial, sans-serif;
+        background: linear-gradient(to right, #7dd3fc, #c084fc);
+        height: 100vh;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+
+    .container {
+        background: linear-gradient(to right, #67e8f9, #a855f7);
+        padding: 40px 50px;
+        border-radius: 20px;
+        box-shadow: 0 0 20px rgba(0,0,0,0.3);
+        width: 440px;
+    }
+
+    h2 {
+        text-align: center;
+        font-family: 'Trebuchet MS', sans-serif;
+        letter-spacing: 1px;
+        margin-bottom: 25px;
+        color: black;
+        text-transform: uppercase;
+    }
+
+    .form-group {
+        margin-bottom: 15px;
+    }
+
+    label {
+        display: inline-block;
+        width: 160px;
+        font-weight: bold;
+        color: black;
+        font-size: 15px;
+    }
+
+    input[type="text"],
+    input[type="email"],
+    input[type="password"],
+    input[type="date"],
+    select,
+    textarea {
+        width: 200px;
+        padding: 8px;
+        border-radius: 10px;
+        border: 1px solid #ccc;
+        outline: none;
+        font-size: 14px;
+    }
+
+    textarea {
+        resize: none;
+        height: 60px;
+    }
+
+    input[type="radio"] {
+        margin-left: 10px;
+    }
+
+    .btn-container {
+        text-align: center;
+        margin-top: 20px;
+    }
+
+    button {
+        background-color: #22c55e;
+        border: none;
+        color: white;
+        padding: 10px 25px;
+        border-radius: 20px;
+        margin: 0 10px;
+        font-size: 15px;
+        cursor: pointer;
+        transition: 0.3s;
+    }
+
+    button:hover {
+        background-color: #16a34a;
+    }
+
+    .cancel {
+        background-color: #4ade80;
+    }
+
+    .cancel:hover {
+        background-color: #22c55e;
+    }
+</style>
+</head>
+<body>
+
+<div class="container">
+    <h2>Trainer Registration</h2>
+    <form>
+        <div class="form-group">
+            <label>NAME :</label>
+            <input type="text" placeholder="Username">
+        </div>
+
+        <div class="form-group">
+            <label>EMAIL :</label>
+            <input type="email" placeholder="Email">
+        </div>
+
+        <div class="form-group">
+            <label>DATE :</label>
+            <input type="date">
+        </div>
+
+        <div class="form-group">
+            <label>QUALIFICATION :</label>
+            <select>
+                <option>10th</option>
+                <option>12th</option>
+                <option>Graduation</option>
+                <option>Post Graduation</option>
+            </select>
+        </div>
+
+        <div class="form-group">
+            <label>GENDER :</label>
+            <input type="radio" name="gender">Male
+            <input type="radio" name="gender">Female
+        </div>
+
+        <div class="form-group">
+            <label>CURRENT DESIGNATION :</label>
+            <input type="text" placeholder="Designation">
+        </div>
+
+        <div class="form-group">
+            <label>WORK EXPERIENCE :</label>
+            <textarea placeholder="Enter Work Experience..."></textarea>
+        </div>
+
+        <div class="form-group">
+            <label>USERNAME :</label>
+            <input type="text" placeholder="Username">
+        </div>
+
+        <div class="form-group">
+            <label>PASSWORD :</label>
+            <input type="password" placeholder="Password">
+        </div>
+
+        <div class="btn-container">
+            <button type="submit" >Save</button>
+            <button type="reset" class="cancel">Cancel</button>
+        </div>
+    </form>
+</div>
+
+</body>
+</html>
